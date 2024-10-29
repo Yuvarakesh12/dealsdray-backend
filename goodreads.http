@@ -1,0 +1,62 @@
+### GET all employees
+GET http://localhost:5000/employees/
+
+### POST a new employee
+POST http://localhost:5000/addemployees/
+Content-Type: application/json
+
+{
+    "name": "YUvarakesh",
+    "email": "danceryuvarocx@gmail.com",
+    "mobile_no": "9182489219",
+    "designation": "developer",
+    "gender": "male",
+    "course": "mech",
+    "image": "https://res.cloudinary.com/ds5ooz2ve/image/upload/v1721382978/989da2826fe6e25ad1f617fda7e70025_d6ucl3.png",
+    "createdDate": "2002-03-15"
+}
+
+######
+PUT http://localhost:5000/updateemployee/1/
+Content-Type: application/json
+
+{
+    "name": "YUvarakesh",
+    "email": "yuvarakesh@example.com",
+    "mobile_no": "9182489219",
+    "designation": "senior developer",
+    "gender": "male",
+    "course": "mech",
+    "image": "https://example.com/image.png"
+}
+
+#######
+
+DELETE http://localhost:5000/employees/21/
+
+
+#########
+
+POST http://localhost:5000/users/
+Content-Type: application/json
+
+{   
+    "name":"Yuva",
+    "username":"Yuva123",
+    "password":"Yuva@456",
+    "gender": "Male",
+    "location":"srikakulam"
+}
+
+
+###
+
+POST http://localhost:5000/login/
+Content-Type: application/json
+
+{
+    "username":"rakesh123",
+    "password":"rakesh@456"
+}
+#####
+
